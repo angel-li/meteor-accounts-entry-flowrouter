@@ -67,6 +67,9 @@ AccountsEntry.entrySignUpEvents = {
     extraFields = _.pluck(AccountsEntry.settings.extraSignUpFields, 'field');
     filteredExtraFields = _.pick(formValues, extraFields);
 
+    console.log("extra_fields: ",  extraFields);
+    console.log("filteredExtra_fields: ",  filteredExtraFields);
+
     password = t.find('input[name="password1"]').value;
 
     fields = AccountsEntry.settings.passwordSignupFields;
